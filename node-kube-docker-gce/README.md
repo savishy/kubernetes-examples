@@ -1,7 +1,6 @@
 # Node-Kubernetes-Docker-Google Cloud Engine #
 
-This example runs a Dockerized Node application in Kubernetes and Google Cloud.
-(Currently a Stub).
+This example runs a Dockerized Node application as a Kubernetes pod in Google Cloud.
 
 ### Prerequisites ###
 
@@ -18,8 +17,12 @@ DOCKER_USERNAME: your Docker Hub username (e.g docker.io/username)
 DOCKER_PASSWORD: your Docker Hub password
 ```
 
-Execute the `run.sh` script which does the following:
+Execute the `run.rb` script which does the following:
 
 1. Logs you in to Docker Hub if needed.
-1. Builds a sample node application into a `Dockerfile`.
-2. Pushes the image to `docker.io`
+1. Builds a sample `nodejs` application into a `Dockerfile`.
+2. Pushes the image to Docker Hub
+3. Creates a Google Cloud Container Cluster
+4. Creates a Kubernetes Pod
+5. Exposes the load balancer IP 
+6. Prints IP onscreen.
