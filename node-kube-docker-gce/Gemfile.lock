@@ -1,0 +1,17 @@
+GIT
+  remote: git://github.com/savishy/ruby-gems.git
+  revision: 449d95bb4b8c21accdfacf0973822621d27a23b6
+  specs:
+    common_utils (0.0.3)
+
+GEM
+  specs:
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  common_utils!
+
+BUNDLED WITH
+   1.12.5
