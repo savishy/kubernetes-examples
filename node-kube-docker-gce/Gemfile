@@ -1,0 +1,1 @@
+gem 'common_utils', :github => 'savishy/ruby-gems'

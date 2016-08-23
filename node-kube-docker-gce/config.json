@@ -1,0 +1,7 @@
+{
+	"docker_username": "",
+	"docker_password": "",
+	"docker_image_name": "node-kube-docker-gce",
+	"docker_image_version": "1.0",
+	"gce_compute_zone": "asia-east1-a"
+}
