@@ -1,0 +1,31 @@
+{
+    "region": "ap-south-1",
+    "availability_zone": "a",
+    "ssh_username": "ec2-user",
+    "ec2s": {
+        "etcd0": {
+            "ami_id": "ami-ffbdd790",
+            "instance_type": "t2.micro",
+            "tags": {
+                "Name": "etcd0",
+                "Role": "etcd"
+            }
+        },
+        "master0": {
+            "ami_id": "ami-ffbdd790",
+            "instance_type": "t2.micro",
+            "tags": {
+                "Name": "master0",
+                "Role": "master"
+            }
+        },
+        "node0": {
+            "ami_id": "ami-ffbdd790",
+            "instance_type": "t2.micro",
+            "tags": {
+                "Name": "node0",
+                "Role": "node"
+            }
+        }
+    }
+}
