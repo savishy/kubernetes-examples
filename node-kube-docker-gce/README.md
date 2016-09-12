@@ -5,8 +5,9 @@ This example runs a Dockerized Node application as a Kubernetes pod in Google Cl
 ### Prerequisites ###
 
 1. A Docker Hub account. Needed for pushing your containizered application image.
-2. A working Docker installation e.g Docker Toolbox on Windows.
-3. If you are on windows, you will need the ability to run shell scripts e.g. Cygwin or MinGW.
+2. A working Docker installation e.g Docker Toolbox on Windows or Docker Engine on Linux.
+3. *Ruby Script may not work properly on Windows.*
+4. An Google Cloud project for Kubernetes should already have been created. Store the project ID in `config.json`, under the key `gce_project`.
 
 ### How to run ###
 
@@ -24,5 +25,11 @@ Execute the `run.rb` script which does the following:
 2. Pushes the image to Docker Hub
 3. Creates a Google Cloud Container Cluster
 4. Creates a Kubernetes Pod
-5. Exposes the load balancer IP 
+5. Exposes the load balancer IP
 6. Prints IP onscreen.
+
+### Cleaning up ###
+After your run you can clean up your efforts by running `cleanup.rb`.
+This will
+* delete the load-balancer and deployments
+* delete the google cloud container cluster.
