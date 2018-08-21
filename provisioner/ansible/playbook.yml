@@ -1,0 +1,7 @@
+- hosts: all
+  vars:
+    kubernetes_allow_pods_on_master: True
+    kubernetes_enable_web_ui: True
+  roles:
+    - { role: geerlingguy.docker, become: true }
+    - { role: geerlingguy.kubernetes, become: true }
